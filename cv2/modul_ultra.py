@@ -1,0 +1,2 @@
+def ultra():
+    print("OAJSDOASJDAOD")
