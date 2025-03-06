@@ -14,7 +14,7 @@ def ul_15():
         print("\nŠtatistiky dát:\n", df.describe())
 
 
-def ul_2_2():
+def ul_2_3():
     df = pd.read_csv("data/patients.csv")
     df.columns = ["name", "diagnosis"]
     df["ID"] = range(19)
@@ -23,13 +23,13 @@ def ul_2_2():
     print("\nPočet diagnóz:\n", diagnosis_counts)
 
 
-def ul_2_3():
+def ul_2_4():
     img = Image.open("data/microscope.jpg")
     cropped_img = img.crop((300, 550, 1000, 1250))
     cropped_img.show()
 
 
-def ul_2_4():
+def ul_2_5():
     class PatientData:
         def __init__(self, file_path):
             self.df = pd.read_csv(file_path, header=None)
