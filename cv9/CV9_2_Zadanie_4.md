@@ -17,9 +17,9 @@ Normalizujte distribúciu datasetu (pre premenné aj vzorku).
 (Vyberte akúkoľvek kombináciu operácií, ktorá je podľa Vás najlepšia).
 
 **Ktoré operácie ste pri normalizácii použili?**
-Sample normalization: # TODO
-Data Transformation:  # TODO
-Data Scaling:         # TODO
+Sample normalization: Normalization by median
+Data Transformation:  Log transformation (base 10)
+Data Scaling:         Auto scaling	(mean-centered and divided by the standard deviation of each variable)
 ### Úloha 2 (4b)
 
 Použite ľubovoľné štatistické metódy na analýzu datasetu (napr. t-test, correlations, PCA, PLS-DA, Dendrogram, Heatmap, K-means, RandomForest, ..) 
@@ -27,10 +27,10 @@ Použite ľubovoľné štatistické metódy na analýzu datasetu (napr. t-test, 
 **Uveďte aspoň 4 skutočnosti (z 4 rôznych metód), ktoré ste zistili analýzou datasetu:**
 
 (Napr. Pri použití pearsonovho korelačného koeficientu je najvyššia pozitívna korelácia medzi premennými x a y, a koeficient korelácie je 0.992.)
-1: # TODO
-2: # TODO
-3: # TODO
-4: # TODO
+1: (PCA) najsilnejšie odlíšenie pacientov od kontrol je dané binmi okolo 0.78–0.94 ppm, čo naznačuje, že metabolity s týmito chemickými posunmi sú kľúčové biomarkery závažného ochorenia obličiek v tejto štúdii.
+2: (PLS-DA) pacienti a kontrolná skupina a dajú celkom dobre odlíšiť hlavne podľa komponentov 1, 2 a 3. Tieto tri komponenty zachytávajú spolu najviac rozdielov medzi skupinami.
+3: (OPLS-DA) Medzi skupinami existuje jasné oddelenie na základe skóre, čo naznačuje, že ich metabolické profily sa významne líšia
+4: (Random forest) Model dosiahol veľmi dobrú presnosť klasifikácie, s celkovou OOB chybou iba 6 %, pričom dokázal správne identifikovať väčšinu vzoriek z oboch skupín.
 
 Vygenerujte report z vykonanej analýzy a celý výsledný zip file odovzdajte ako prílohu k riešeniu zadania.
 
